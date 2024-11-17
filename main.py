@@ -8,9 +8,10 @@
 @Version :   1.0
 @Description:   
 '''
+# ConvLSTMを用いた動画予測モデルの訓練を行うスクリプト
 
 import os
-os.environ["CUDA_VISIBLE_DEVICES"] = "0"
+os.environ["CUDA_VISIBLE_DEVICES"] = "1"
 from encoder import Encoder
 from decoder import Decoder
 from model import ED
